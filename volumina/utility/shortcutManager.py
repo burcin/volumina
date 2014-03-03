@@ -56,6 +56,9 @@ class ShortcutManager(object):
     def __init__(self):
         self._shortcuts = collections.OrderedDict()
         self.shortcutCollisions = set()
+        # cache keymap -> active shortcut to quickly disable other active
+        # shortcuts with same keymap
+        self._keymap_shortcut_dict = dict()
     
     def register(self, group, description, shortcut, objectWithToolTip=None):
         """
@@ -82,16 +85,20 @@ class ShortcutManager(object):
             keyseq = groupKeys[description]
             shortcut.setKey( keyseq )
         
-        # Before we add this shortcut to our dict, disable any other shortcuts it replaces
-        conflicting_shortcuts = self._findExistingShortcuts( shortcut.key().toString() )
-        for conflicted in conflicting_shortcuts:
+        # Before we add this shortcut to our dict, disable the shortcut
+        # it replaces
+        keymap_str = str(shortcut.key().toString()).lower()
+        conflicted = self._keymap_shortcut_dict.get(keymap_str, None)
+        if conflicted is not None:
             conflicted.setKey( QKeySequence("") )
             self.updateToolTip( conflicted )
+        self._keymap_shortcut_dict[keymap_str] = shortcut
         
         self._shortcuts[group][shortcut] = (description, objectWithToolTip)
         self.updateToolTip( shortcut )
 
     def _findExistingShortcuts(self, keyseq):
+        # FIXME: is this function really necessary?
         existing_shortcuts = []
         for group, shortcutDict in self._shortcuts.items():
             for (shortcut, (desc, obj)) in shortcutDict.items():
