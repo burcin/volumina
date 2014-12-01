@@ -22,8 +22,8 @@
 import os
 import time
 import unittest as ut
-from PyQt4.QtCore import QTimer
-from PyQt4.QtGui import qApp, QApplication, QWidget, QHBoxLayout, QPixmap
+from PyQt5.QtCore import QTimer
+from PyQt5.QtGui import qApp, QApplication, QWidget, QHBoxLayout, QPixmap
                          
 from volumina.layer import Layer
 from volumina.layerstack import LayerStackModel

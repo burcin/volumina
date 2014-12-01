@@ -20,9 +20,9 @@
 #		   http://ilastik.org/license/
 ###############################################################################
 #!/usr/bin/env python
-from PyQt4.QtCore import pyqtSignal, QObject, Qt, QSize, QPointF, QRectF, \
+from PyQt5.QtCore import pyqtSignal, QObject, Qt, QSize, QPointF, QRectF, \
                          QRect, QPoint, QSizeF
-from PyQt4.QtGui  import QPen, QGraphicsScene, QColor, \
+from PyQt5.QtGui  import QPen, QGraphicsScene, QColor, \
                          QImage, QPainter, QGraphicsLineItem, QBrush
 
 import numpy, math

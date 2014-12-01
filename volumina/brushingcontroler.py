@@ -20,8 +20,8 @@
 #		   http://ilastik.org/license/
 ###############################################################################
 from functools import partial
-from PyQt4.QtCore import pyqtSignal, QObject, QEvent, QPointF, Qt, QTimer
-from PyQt4.QtGui import QPen, QBrush, QApplication, QMouseEvent, QGraphicsLineItem
+from PyQt5.QtCore import pyqtSignal, QObject, QEvent, QPointF, Qt, QTimer
+from PyQt5.QtGui import QPen, QBrush, QApplication, QMouseEvent, QGraphicsLineItem
 
 from navigationControler import NavigationInterpreter
 

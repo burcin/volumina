@@ -22,7 +22,7 @@
 import unittest as ut
 import time, datetime
 
-from PyQt4.QtGui import QImage, QPainter, QApplication, QStyleOptionGraphicsItem
+from PyQt5.QtGui import QImage, QPainter, QApplication, QStyleOptionGraphicsItem
 
 from qimage2ndarray import byte_view
 import numpy as np

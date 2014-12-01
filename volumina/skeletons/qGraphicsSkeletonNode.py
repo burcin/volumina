@@ -19,8 +19,8 @@
 # This information is also available on the ilastik web site at:
 #		   http://ilastik.org/license/
 ###############################################################################
-from PyQt4.QtCore import QPointF, Qt, QRectF
-from PyQt4.QtGui import QGraphicsRectItem, QPen, QBrush, QGraphicsItem, QMenu, QColor
+from PyQt5.QtCore import QPointF, Qt, QRectF
+from PyQt5.QtGui import QGraphicsRectItem, QPen, QBrush, QGraphicsItem, QMenu, QColor
 
 #######################################################################################################################
 # ResizeHandle                                                                                                        #

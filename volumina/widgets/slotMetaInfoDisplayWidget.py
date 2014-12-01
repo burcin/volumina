@@ -21,8 +21,8 @@
 ###############################################################################
 import os
 
-from PyQt4 import uic
-from PyQt4.QtGui import QWidget
+from PyQt5 import uic
+from PyQt5.QtGui import QWidget
 
 class SlotMetaInfoDisplayWidget(QWidget):
     """
@@ -54,7 +54,7 @@ class SlotMetaInfoDisplayWidget(QWidget):
 if __name__ == "__main__":
     import numpy
     import vigra
-    from PyQt4.QtGui import QApplication
+    from PyQt5.QtGui import QApplication
     from lazyflow.graph import Graph
     from lazyflow.operators import OpArrayCache
 

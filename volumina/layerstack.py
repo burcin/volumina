@@ -20,9 +20,9 @@
 #		   http://ilastik.org/license/
 ###############################################################################
 import functools
-from PyQt4.QtCore import QAbstractListModel, pyqtSignal, QModelIndex, Qt, \
+from PyQt5.QtCore import QAbstractListModel, pyqtSignal, QModelIndex, Qt, \
                          QTimer, pyqtSignature
-from PyQt4.QtGui import QItemSelectionModel
+from PyQt5.QtGui import QItemSelectionModel
 
 from volumina.layer import Layer
 

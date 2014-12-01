@@ -20,8 +20,8 @@
 #		   http://ilastik.org/license/
 ###############################################################################
 import unittest as ut
-from PyQt4.QtCore import QRect, QObject
-from PyQt4.QtGui import QItemSelectionModel
+from PyQt5.QtCore import QRect, QObject
+from PyQt5.QtGui import QItemSelectionModel
 
 from volumina.layerstack import LayerStackModel
 from volumina.layer import GrayscaleLayer

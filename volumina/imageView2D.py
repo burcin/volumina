@@ -19,8 +19,8 @@
 # This information is also available on the ilastik web site at:
 #		   http://ilastik.org/license/
 ###############################################################################
-from PyQt4.QtCore import QPoint, QPointF, QTimer, pyqtSignal, Qt, QRect
-from PyQt4.QtGui import QCursor, QGraphicsView, QPainter, QVBoxLayout, QApplication
+from PyQt5.QtCore import QPoint, QPointF, QTimer, pyqtSignal, Qt, QRect
+from PyQt5.QtGui import QCursor, QGraphicsView, QPainter, QVBoxLayout, QApplication
 
 import numpy
 
@@ -216,7 +216,7 @@ class ImageView2D(QGraphicsView):
         return QPointF(x, y)
 
     def _qBound(self, minVal, current, maxVal):
-        """PyQt4 does not wrap the qBound function from Qt's global namespace
+        """PyQt5 does not wrap the qBound function from Qt's global namespace
            This is equivalent."""
         return max(min(current, maxVal), minVal)
 
@@ -302,7 +302,7 @@ if __name__ == '__main__':
     #make the program quit on Ctrl+C
     import signal
     signal.signal(signal.SIGINT, signal.SIG_DFL)
-    from PyQt4.QtGui import QMainWindow
+    from PyQt5.QtGui import QMainWindow
     from scipy.misc import lena
 
     def checkerboard(shape, squareSize):

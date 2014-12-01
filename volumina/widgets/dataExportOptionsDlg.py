@@ -25,9 +25,9 @@ from functools import partial
 
 import numpy
 
-from PyQt4 import uic
-from PyQt4.QtCore import Qt, QObject, QEvent
-from PyQt4.QtGui import QDialog, QValidator, QDialogButtonBox
+from PyQt5 import uic
+from PyQt5.QtCore import Qt, QObject, QEvent
+from PyQt5.QtGui import QDialog, QValidator, QDialogButtonBox
 
 try:
     from lazyflow.graph import Operator, InputSlot, OutputSlot
@@ -446,7 +446,7 @@ def dtype_limits(dtype):
 #**************************************************************************
 if __name__ == "__main__":
     import vigra
-    from PyQt4.QtGui import QApplication
+    from PyQt5.QtGui import QApplication
     from lazyflow.graph import Graph
     from lazyflow.operators.ioOperators import OpFormattedDataExport
 

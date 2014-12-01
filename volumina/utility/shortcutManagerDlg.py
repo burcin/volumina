@@ -1,7 +1,7 @@
 import collections
 
-from PyQt4.QtCore import QStringList
-from PyQt4.QtGui import QDialog, QScrollArea, QHBoxLayout, QVBoxLayout, \
+from PyQt5.QtCore import QStringList
+from PyQt5.QtGui import QDialog, QScrollArea, QHBoxLayout, QVBoxLayout, \
                         QLineEdit, QPushButton, QSpacerItem, QWidget, QTreeWidget, QTreeWidgetItem, QSizePolicy
 
 from shortcutManager import ShortcutManager
@@ -79,10 +79,10 @@ class ShortcutManagerDlg(QDialog):
         mgr.store_to_preferences()
                 
 if __name__ == "__main__":
-    from PyQt4.QtGui import QShortcut, QKeySequence
+    from PyQt5.QtGui import QShortcut, QKeySequence
     from functools import partial
 
-    from PyQt4.QtGui import QApplication, QPushButton, QWidget
+    from PyQt5.QtGui import QApplication, QPushButton, QWidget
     app = QApplication([])
 
     mainWindow = QWidget()

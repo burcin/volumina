@@ -34,12 +34,12 @@ will be displayed red and 1s black.
 '''
 
 import itertools
-from PyQt4.QtGui import QColor
+from PyQt5.QtGui import QColor
 
 
 
 
-from PyQt4.QtGui import QColor
+from PyQt5.QtGui import QColor
 import warnings
     
 import numpy as np
@@ -404,7 +404,7 @@ def create_random_16bit():
 
 if __name__=="__main__":
       from volumina.api import *
-      from PyQt4.QtGui import QApplication
+      from PyQt5.QtGui import QApplication
       import numpy
       from volumina.pixelpipeline.datasourcefactories import *
       app = QApplication(sys.argv)

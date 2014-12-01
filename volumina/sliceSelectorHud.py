@@ -22,8 +22,8 @@
 from functools import partial
 
 #PyQt
-from PyQt4.QtCore import pyqtSignal, Qt, QPointF, QSize
-from PyQt4.QtGui import QLabel, QPen, QPainter, QPixmap, QColor, QHBoxLayout, QVBoxLayout, \
+from PyQt5.QtCore import pyqtSignal, Qt, QPointF, QSize
+from PyQt5.QtGui import QLabel, QPen, QPainter, QPixmap, QColor, QHBoxLayout, QVBoxLayout, \
                         QFont, QPainterPath, QBrush, QAbstractSpinBox, \
                         QCheckBox, QWidget, QFrame, QTransform, QProgressBar, QSizePolicy
 
@@ -510,7 +510,7 @@ class QuadStatusBar(QHBoxLayout):
 
 if __name__ == "__main__":
     import sys
-    from PyQt4.QtGui import QDialog, QApplication
+    from PyQt5.QtGui import QDialog, QApplication
     #make the program quit on Ctrl+C
     import signal
     signal.signal(signal.SIGINT, signal.SIG_DFL)

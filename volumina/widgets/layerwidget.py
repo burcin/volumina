@@ -20,8 +20,8 @@
 #		   http://ilastik.org/license/
 ###############################################################################
 import warnings
-from PyQt4.QtCore import pyqtSignal, Qt, QEvent, QRect, QSize, QTimer, QPoint
-from PyQt4.QtGui import QStyledItemDelegate, QWidget, QListView, QStyle, \
+from PyQt5.QtCore import pyqtSignal, Qt, QEvent, QRect, QSize, QTimer, QPoint
+from PyQt5.QtGui import QStyledItemDelegate, QWidget, QListView, QStyle, \
                         QPainter, QItemSelectionModel, QFontMetrics, QFont,\
                         QPalette, QMouseEvent, QLabel, QGridLayout, QPixmap, \
                         QSpinBox, QApplication
@@ -442,7 +442,7 @@ if __name__ == "__main__":
 
     import sys, numpy
 
-    from PyQt4.QtGui import QPushButton, QHBoxLayout, QVBoxLayout
+    from PyQt5.QtGui import QPushButton, QHBoxLayout, QVBoxLayout
     from volumina.pixelpipeline.datasources import ArraySource, ConstantSource
 
     app = QApplication(sys.argv)

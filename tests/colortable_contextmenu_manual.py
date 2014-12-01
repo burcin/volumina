@@ -24,8 +24,8 @@
 #
 
 from volumina.api import Viewer
-from PyQt4.QtGui import QApplication, QColor, QKeySequence, QShortcut
-from PyQt4.QtGui import QPushButton
+from PyQt5.QtGui import QApplication, QColor, QKeySequence, QShortcut
+from PyQt5.QtGui import QPushButton
 import numpy
 import h5py
 

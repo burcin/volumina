@@ -32,8 +32,8 @@ except:
     from colorama import Fore, Back, Style
 
 
-from PyQt4.QtCore import QObject, QRect, pyqtSignal, QMutex
-from PyQt4.QtGui import QImage, QColor
+from PyQt5.QtCore import QObject, QRect, pyqtSignal, QMutex
+from PyQt5.QtGui import QImage, QColor
 from qimage2ndarray import gray2qimage, array2qimage, alpha_view, rgb_view, byte_view
 from asyncabcs import SourceABC, RequestABC
 from volumina.slicingtools import is_bounded, slicing2rect, rect2slicing, slicing2shape, is_pure_slicing

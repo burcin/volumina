@@ -19,8 +19,8 @@
 # This information is also available on the ilastik web site at:
 #		   http://ilastik.org/license/
 ###############################################################################
-from PyQt4.QtCore import QObject, QTimer, QEvent, Qt, QPointF, pyqtSignal
-from PyQt4.QtGui  import QColor, QCursor 
+from PyQt5.QtCore import QObject, QTimer, QEvent, Qt, QPointF, pyqtSignal
+from PyQt5.QtGui  import QColor, QCursor 
 
 import copy
 import warnings

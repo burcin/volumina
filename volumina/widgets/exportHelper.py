@@ -23,8 +23,8 @@
 from functools import partial
 
 #Qt
-from PyQt4.QtCore import pyqtSignal, QObject
-from PyQt4.QtGui import QMessageBox
+from PyQt5.QtCore import pyqtSignal, QObject
+from PyQt5.QtGui import QMessageBox
 
 #volumina
 from dataExportOptionsDlg import DataExportOptionsDlg

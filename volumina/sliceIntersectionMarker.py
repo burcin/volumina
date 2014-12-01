@@ -19,8 +19,8 @@
 # This information is also available on the ilastik web site at:
 #		   http://ilastik.org/license/
 ###############################################################################
-from PyQt4.QtCore import Qt, QRectF, QPointF
-from PyQt4.QtGui import QGraphicsItem, QPen, QApplication, QCursor
+from PyQt5.QtCore import Qt, QRectF, QPointF
+from PyQt5.QtGui import QGraphicsItem, QPen, QApplication, QCursor
 
 #*******************************************************************************
 # S l i c e I n t e r s e c t i o n M a r k e r                                *

@@ -29,9 +29,9 @@ sys.path.append("../.")
 import numpy
 
 #PyQt
-from PyQt4.QtCore import QRect
-from PyQt4.QtGui import QImage
-from PyQt4.QtGui import QColor
+from PyQt5.QtCore import QRect
+from PyQt5.QtGui import QImage
+from PyQt5.QtGui import QColor
 
 #volumina
 import volumina._testing

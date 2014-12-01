@@ -20,7 +20,7 @@
 #		   http://ilastik.org/license/
 ###############################################################################
 import sys
-from PyQt4.QtCore import QString
+from PyQt5.QtCore import QString
 
 def encode_from_qstring(qstr, encoding=sys.getfilesystemencoding()):
     """

@@ -29,8 +29,8 @@ import copy
 import numpy
 
 #PyQt
-from PyQt4.QtCore import Qt, QRectF, QEvent, QObject, QTimerEvent, QTimer
-from PyQt4.QtGui import QApplication, QWidget, QShortcut, QKeySequence, QHBoxLayout, \
+from PyQt5.QtCore import Qt, QRectF, QEvent, QObject, QTimerEvent, QTimer
+from PyQt5.QtGui import QApplication, QWidget, QShortcut, QKeySequence, QHBoxLayout, \
                         QColor, QSizePolicy, QAction, QIcon, QSpinBox, QMenu, QDialog, QLabel, QLineEdit, QPushButton, QMainWindow
 
 #volumina

@@ -48,8 +48,8 @@
 #    authors and should not be interpreted as representing official policies, either expressed
 #    or implied, of their employers.
 
-from PyQt4.QtCore import Qt, QPointF, QRectF
-from PyQt4.QtGui import QGraphicsItem, QPen
+from PyQt5.QtCore import Qt, QPointF, QRectF
+from PyQt5.QtGui import QGraphicsItem, QPen
 
 #*******************************************************************************
 # C r o s s H a i r C u r s o r                                                *

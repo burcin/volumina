@@ -29,9 +29,9 @@ from volumina.layerstack import LayerStackModel
 from volumina.navigationControler import NavigationInterpreter
 from volumina import colortables
 
-from PyQt4.QtCore import QTimer, pyqtSignal
-from PyQt4.QtGui import QMainWindow, QApplication, QIcon, QAction, qApp
-from PyQt4.uic import loadUi
+from PyQt5.QtCore import QTimer, pyqtSignal
+from PyQt5.QtGui import QMainWindow, QApplication, QIcon, QAction, qApp
+from PyQt5.uic import loadUi
 
 import os
 import random

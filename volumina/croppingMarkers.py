@@ -15,8 +15,8 @@
 # Copyright 2011-2014, the ilastik developers
 import copy
 import contextlib
-from PyQt4.QtCore import pyqtSignal, Qt, QObject, QRectF, QPointF
-from PyQt4.QtGui import QGraphicsItem, QPen, QApplication, QCursor, QBrush, QColor
+from PyQt5.QtCore import pyqtSignal, Qt, QObject, QRectF, QPointF
+from PyQt5.QtGui import QGraphicsItem, QPen, QApplication, QCursor, QBrush, QColor
 
 class CropExtentsModel( QObject ):
     changed = pyqtSignal( object )  # list of start/stop coords indexed by axis

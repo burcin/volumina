@@ -22,8 +22,8 @@
 import colorsys
 import numpy
 
-from PyQt4.QtCore import QObject, pyqtSignal, QString
-from PyQt4.QtGui import QColor
+from PyQt5.QtCore import QObject, pyqtSignal, QString
+from PyQt5.QtGui import QColor
 
 from volumina.interpreter import ClickInterpreter
 from volumina.pixelpipeline.asyncabcs import SourceABC
